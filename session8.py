@@ -90,4 +90,4 @@ def check_fibonacci():
             a=b
             b=c
             return b
-    return fibonacci    
+    return fibonacci

@@ -7,7 +7,11 @@ from math import tan, pi
 
 
 def check(fn):
+    '''
+    returns True/False based on length of docstring is greater than 50 characters or not
+    input: function is passed
     count=50
+    '''
     def check_docstring_l(*args, **kwargs):
         if len(fn.__doc__) > count:
             #print("docstring length is greater")
@@ -30,6 +34,10 @@ def summation(a,b):
 
 dic={}
 def counter(fn):
+    '''
+    returns the global dictionary which gives the frequency of each function 
+    input: function passed
+    '''
     cnt = 0
     def inner(*args, **kwargs):
         nonlocal cnt
@@ -43,20 +51,33 @@ def counter(fn):
 
 
 def add(a, b):
+    '''
+    returns the addition of two numbers
+    '''
     return a + b
 
 
 def mul(a, b):
+    '''
+    returns the product of two numbers
+    '''
     return a*b
 
 
 def div(a,b):
+    '''
+    returns the division of two numbers
+    '''
     return a/b
 
 
 dicA={}
 dicB={}
 def counter2(fn,dic):
+    '''
+    returns the separate dictionary which gives the frequency of each function for different user
+    input: function and dictionary passed
+    '''
     cnt = 0
     def inner(*args, **kwargs):
         nonlocal cnt
@@ -71,6 +92,9 @@ def counter2(fn,dic):
 
 
 def check_fibonacci():
+    '''
+    returns the next number from fibnocci 
+    '''
     a=0
     b=1
     count=0

@@ -2,7 +2,7 @@ import pytest , os , inspect , re , random,session8
 from decimal import Decimal
 import math
 import random
-README_CONTENT_CHECK_FOR = [check,summation,counter,counter2,check_fibonacci]
+README_CONTENT_CHECK_FOR = ['check,summation,counter,counter2,check_fibonacci']
 
 
 def test_docstring_length():

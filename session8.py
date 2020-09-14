@@ -10,8 +10,8 @@ def check(fn):
     '''
     returns True/False based on length of docstring is greater than 50 characters or not
     input: function is passed
-    count=50
     '''
+    count=50
     def check_docstring_l(*args, **kwargs):
         if len(fn.__doc__) > count:
             #print("docstring length is greater")

@@ -2,6 +2,7 @@ import pytest , os , inspect , re , random,session8
 from decimal import Decimal
 import math
 import random
+README_CONTENT_CHECK_FOR = ['Session6']
 
 
 def test_docstring_length():
@@ -62,7 +63,28 @@ def test_funcation_had_cap_letter():
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
 
+def test_readme_words_counts():
+    readme = open('README.md','r')
+    readme_words = readme.read().split()
+    readme.close()
+    assert len(readme_words) >= 100 , "Kindly define README properly"
 
 
+def test_readme_for_formatting():
+    readme = open('README.md','r')
+    content = readme.read()
+    readme.close()
+    assert content.count('#') >= 5 , "Kindly format the README.md"
 
+
+def test_readme_proper_desscription():
+    READMELOOKSGOOD = True
+    readme = open('README.md','r')
+    readme_words = readme.read().split()
+    readme.close()
+    for words in README_CONTENT_CHECK_FOR:
+        if words not in readme_words:
+            READMELOOKSGOOD = False
+            pass
+    assert READMELOOKSGOOD == True , "You have not defined all functions/classes in README.md"
 

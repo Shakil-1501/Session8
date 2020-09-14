@@ -29,6 +29,17 @@
 &nbsp;
 ---
 &nbsp;
+
+## Functions
+| Serial No  | Name | Functionality |
+| ---------- | --------- | ------ |
+| 1 | check |The function takesin function as parameters and returns True/False based on length of docstring is greater than 50 characters or not|
+    
+| 2 | check_fibonacci| This function returns the next number from fibnocci |
+| 3 | counter |The function takes in function as parameters and returns the global dictionary which gives the frequency of each function |
+| 4 | counter2| The function takes in function as parameters and returns the separate dictionary which gives the frequency of each function for different user |
+
+
 ## Test Cases Results
 | Serial No  | Test Case | Result |
 | ---------- | --------- | ------ |

@@ -2,7 +2,7 @@ import pytest , os , inspect , re , random,session8
 from decimal import Decimal
 import math
 import random
-README_CONTENT_CHECK_FOR = ['Session6']
+README_CONTENT_CHECK_FOR = ['Session : 8']
 
 
 def test_docstring_length():
